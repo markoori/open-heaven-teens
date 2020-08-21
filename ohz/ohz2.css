@@ -1,0 +1,246 @@
+.quote2{
+  border: 1px;
+  width:100%;
+  height: 300px;
+  background: linear-gradient(to right,lightblue,rgba(0, 0, 0, 0));
+  box-shadow:2px 3px 5px;
+  text-align: center;
+  padding: 10px;
+}
+.quote h1{
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+.quote2 p{
+  text-shadow:2px 2px;
+  font-size: 30px;
+
+}
+
+
+
+/*callout header*/
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
+/*Recent posts*/
+
+.recentpost{
+  border:1px solid black;
+  width: 90%;
+  height: 500px;
+  border-radius: 9px 2px 48px 0px;
+  margin: 50px;
+}
+.recentpost .morep{
+  text-align: right;
+}
+
+.column {
+  float: left;
+  width: 70%;
+  padding: 5px;
+  border: 1px;
+  box-shadow: 2px 5px 8px black;
+  margin: 5px;
+}
+.column a{
+  text-decoration: none;
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column:focus{
+  color: blue;
+}
+
+
+ /*footer*/
+.sub{
+  display: inline;
+  align:center;
+}
+ input[type=text]{
+   width: 80px;
+   height: 40px;
+   border-radius: 20px;
+   border:0px 0px 3px 0px;
+   transition: 0.4s;
+   outline: 0px;
+   font-size: 20px;
+   margin-left: 30px;
+ }
+ input[type=text]:focus{
+   width: 300px;
+   transition: 0.4s;
+ }
+ input[type=submit]{
+   width: 80px;
+   height: 30px;
+   border-radius: 20px;
+   border:0px 0px 3px 0px;
+   transition: 0.4s;
+   margin: 20px;
+   background: linear-gradient(to right,red,rgba(0, 0, 0, 0.4));
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   outline:0px;
+
+ }
+.copy{
+  font-size: 2px;
+  text-align: center;
+}
+footer .footerf{
+  font-weight: bolder;
+}
+footer{
+  background-color: #384457;
+  padding: 30px;
+  width: 100%;
+  height: 300px;
+  color: white;
+}
+.color{
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 30px;
+}
+.socialm{
+  border-left: 3px solid black;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+}
+.radio{
+  margin: 30px;
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+
+}
+.radio img{
+  width: 100px;
+  height: 100px;
+}
+.live{
+  background: url(img/others/Pastor-Adeboye.jpg) center ;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+.live a{
+  right: 10px;
+
+}
+
+/*watch live*/
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.
+.button:hover span:after {
+  opacity: 1
+  right: 0;
+}
+
+
+.rccgl{
+  vertical-align: middle;
+}
+.Ohd{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.others{
+    display: block;
+}
+.others button{
+  height: 20px;
+  font-weight: bold;
+
+}
