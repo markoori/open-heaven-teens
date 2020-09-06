@@ -234,6 +234,7 @@ input[placeholder="Enter email"]{
   margin: 4px;
 }
 .radio{
+  margin: 30px;
   padding: 10px;
   width: 400px;
   height: 400px;
@@ -386,4 +387,113 @@ blockquote button{
   margin-left: 70px;
   justify-content: center;
   align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.Forum{
+  background: url('img/others/discussion2.jpg') center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:auto;
+  border-radius: 30px;
+
+}
+.Forum .back{
+  background: rgba(255, 255, 255, 0.2) center fixed;
+  background-size:cover;
+  backdrop-filter:blur(5px);
+}
+
+.Forum h2{
+  padding: 20px 0px 0px 20px;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 40px;
+}
+.Forum .text{
+  text-align: left;
+  padding:20px;
+  margin:10px;
+  font-size: 20px;
+  color:white;
+  width:400px;
+  opacity: 1;
+  color:black;
+
+}
+.Forum a{
+  text-decoration: none;
+}
+.Forum button{
+  width: 200px;
+  height: 50px;
+  background:linear-gradient(to right,tomato,rgba(255, 255, 255));
+  margin:10px;
+  opacity: 1;
+  outline:0px;
+  border:0px;
+  border-radius: 20px;
+  cursor:pointer;
+  font-weight: bolder;
+  font-size:15px;
 }
