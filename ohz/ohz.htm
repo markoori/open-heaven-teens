@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <title></title>
      <!--Import materialize.css-->
-
      <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ohz.css">
     <link rel="stylesheet" href="ohts2.css">
-    <link rel="javascript" href="ohz.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
@@ -31,14 +29,21 @@
          <a href="#">Library</a>
          <a href="upcomingevent.htm">Upcoming events</a>
          <a href="#">Teens devotion</a>
+         <a href="#">Forum</a>
          <a href="aboutohts.html">About</a>
          <a href="contactohts.htm">Contact us</a>
-         <a href="#"><button onclick="myFunctiond()">Toggle dark mode</button></a>
+         <a href="#"><label class="switch">
+           <input type="checkbox" onclick="myFunctiond()">
+           <span class="slider round"></span>
+         </label></a>
+         <a><p style="font-size:20px;"> Darkmode</p></a>
        </div>
+       <p>
        <ul>
        <li><a class="search" href="search.htm"><i class="fa fa-fw fa-search"></i></a></li>
        <li><span class="navlinks" onclick="openNav()">&#9776;</span></li>
-       <ul>
+     </ul>
+      </p>
      </nav>
 
 
@@ -81,7 +86,15 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">navigation</i></button>
 
-
+            <div class="Forum">
+              <div class="back">
+              </div>
+              <h2>Our Forum</h2>
+              <div class="text">
+                <h3>The forum section is where we chat as family and make posts. We can also join groups to meet other people with the same gift and also most intrestingly, chat directly with any open heaven member.</h3>
+              </div>
+              <a href="https://markoori.wixsite.com/ohts" target="_blank"><button type="button" name="button">Visit Forum</button></a>
+            </div>
           <div class="today">
             <div class="sadoz">
               <img src="img/others/sadoz.jpg" alt="sodaz">
@@ -153,7 +166,7 @@
 
         <div class="quote2">
           <h3>Quote for the day</h3>
-          <p> Sin is the disease that everyone should be caution about and not mr Corona. Drugs can't take care of it</p>
+          <p>Praise is prayer in another dimension</p>
         </div>
 
 
@@ -174,7 +187,7 @@
 
 
         <div class="recentpost">
-              <h2>Recent Posts</h2>
+              <h2>Recent Teaching</h2>
               <div class="row">
                 <div class="column">
                   <a href="recenteaching.htm#speak" target="_blank">
@@ -210,11 +223,11 @@
         <div class="chan">
           <div class="chanl">
             <div class="chani">
-              <a href="#" title="click to visit dovetv"> <img src="img/others/dovetv.jpg" alt="" height="300px"> </a>
-              <a href="#"> <img src="img/others/hcgtv.jpg" alt=""> </a>
-              <a href="#"> <img src="img/others/livewaytv.jpg" alt=""> </a>
-              <a href="#"> <img src="img/others/rccgradio.jpg" alt=""> </a>
-              <a href="#"> <img src="img/others/redeemerstv.jpg" alt=""> </a>
+              <a href="https://dovevision.org/live-tv/" title="click to visit dovetv"> <img src="img/others/dovetv.jpg" alt="" height="300px"> </a>
+              <a href="https://www.youtube.com/channel/UCl3Is_3lZf_rnLHtLd-X9fQ"> <img src="img/others/hcgtv.jpg" alt=""> </a>
+              <a href="https://liveway.tv/"> <img src="img/others/livewaytv.jpg" alt=""> </a>
+              <a href="https://rccgworld.org/rccg/"> <img src="img/others/rccgradio.jpg" alt=""> </a>
+              <a href="http://www.redeemersnetwork.tv/"> <img src="img/others/redeemerstv.jpg" alt=""> </a>
             </div>
 
           </div>
@@ -229,7 +242,7 @@
         </div>
 
     <footer>
-            <p class="footerf">subscribe to get Update of upcoming posts</p>
+            <p class="footerf">Subscribe to get Update of upcoming posts</p>
            <form class="" action="mailto:mark65209@gmail.com" method="post">
              <div class="sub">
                <input type="text" name="subscribe" value="" placeholder="Enter email">
@@ -248,8 +261,8 @@
 
 </div>
 <hr><br><br><br>
-<div class="rccgl">
-  <img src="img/others/rccg-logo.png" alt="rccg logo" width="50px" height="50px" style="position:relative; left:44%">
+<div class="rccgl" style="display:flex;justify-content:center;align-items:center;">
+  <img src="img/others/rccg-logo.png" alt="rccg logo" width="50px" height="50px" style="display:flex;justify-content:center;align-items:center;">
 </div>
 <div class="Copy" style="font-size:15px;text-align:center">
  <p> &copy; Copyright RCCG open heaven teens 2020. All Right Reserved. Designed and Developed by RCCG OHTs developer </p><br><br><br><br>
@@ -262,11 +275,11 @@
 <!--call header-->
 
  <div class="callout">
-   <div class="callout-header">Welcome!, or should i say, Welcome again</div>
+   <div class="callout-header">Welcome!</div>
    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
    <div class="callout-container">
-     <p>Welcome to open heaven teens website/webapp.<br><br> This website/webapp is seriously under development and as such it is not designed for pc's size display yet <br><br>
-        close it if it is in your way.</p>
+     <p>Welcome to open heaven teens website/webapp.<br><br> This website/webapp is seriously under development<br><br>
+        Close it if it is in your way.</p>
    </div>
  </div>
 
@@ -345,7 +358,7 @@
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 6 || document.documentElement.scrollTop > 6) {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
       mybutton.style.display = "block";
 
     } else {
@@ -390,7 +403,7 @@ window.fcWidget.init({
 });
 }
 function initialize(i,t){
-  var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+  var e; i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
 function initiateCall(){
   initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 
@@ -416,6 +429,7 @@ status: "Active"                // meta property 2
 </script>
 
 <script>
+
 function myFunction3() {
   var dotsr = document.getElementById("dots3");
   var moreText = document.getElementById("more3");
@@ -431,6 +445,7 @@ function myFunction3() {
     moreText.style.display = "inline";
   }
 }
+
 </script>
 
 </html>
