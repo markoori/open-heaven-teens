@@ -115,11 +115,15 @@
 
 .recentpost{
   width: 90%;
-  height: 500px;
+  height: auto;
   border-radius: 9px 2px 48px 0px;
   margin: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  display: block;
 
+}
+.recentpost h2{
+  text-align: left;
 }
 .recentpost .morep{
   text-align: right;
@@ -132,12 +136,23 @@
   color: white;
   cursor: pointer;
 }
+.morep button{
+  margin-right: 20px;
+}
 .column {
+  display: block;
+  justify-content: center;
+  align-items: center;
   width: 70%;
-  padding: 5px;
+  padding: 20px;
   border: 1px;
   box-shadow: 2px 5px 8px black;
-  margin: 5px;
+  margin-bottom: 50px;
+}
+@media screen and(max-width:700px){
+  .column{
+    width: 500px;
+  }
 }
 .column a{
   text-decoration: none;
@@ -234,22 +249,21 @@ input[placeholder="Enter email"]{
   margin: 4px;
 }
 .radio{
-  margin-top:70px;
+  margin-top:100px;
   padding: 10px;
   width: 100%;
   height: 400px;
   box-shadow:  10px 10px 20px black;
   border-radius:90px 90px 0px 0px;
   margin-bottom: 100px;
-
-
 }
 .radio img{
-  width: 100px;
-  height: 100px;
-  margin-left: 30%;
+width: 100px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
-
 
 /*watch live*/
 
@@ -362,6 +376,7 @@ blockquote button{
   border:0px solid black;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-left: 0px;
   box-shadow: 9px 9px 15px black;
 
 }
@@ -379,12 +394,11 @@ blockquote button{
   width: 100%;
 }
 .chani img{
-  width: 300px;
+  width: 100%;
   height:auto;
   flex: row wrap;
   object-fit: cover;
-  margin: 20px;
-  margin-left: 70px;
+  margin: 20px 0px 20px 0px;
   justify-content: center;
   align-items: center;
 }
@@ -453,17 +467,21 @@ input:checked + .slider:before {
   background: url('img/others/discussion2.jpg') center;
   background-size:cover;
   background-repeat: no-repeat;
+  filter: blur(60%);
+  mix-blend-mode: soft-light;
   width: 100%;
   height:auto;
   border-radius: 30px;
 
 }
 .Forum .back{
-  background: rgba(255, 255, 255, 0.2) center fixed;
+  background-color: rgba(255, 255, 255, 0.5);
   background-size:cover;
-  backdrop-filter:blur(5px);
-}
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
 
+}
 .Forum h2{
   padding: 20px 0px 0px 20px;
   font-weight: bolder;
@@ -476,7 +494,7 @@ input:checked + .slider:before {
   margin:10px;
   font-size: 20px;
   color:white;
-  width:400px;
+  width:80%;
   opacity: 1;
   color:black;
 
