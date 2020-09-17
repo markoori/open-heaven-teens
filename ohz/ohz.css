@@ -83,9 +83,8 @@ body {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  overflow-y: hidden;
-  transition: 0.8s;
-  opacity: 0.8;
+  overflow-y: auto;
+  transition: 0.9s;
 }
 
 .sidenav a {
@@ -116,9 +115,11 @@ body {
   margin-left: 50px;
 }
 .sidenav .closebtn:hover{
-  font-size: 56px;
+  font-size:46px;
 }
-
+.switch{
+  margin-top: 20px;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -129,9 +130,9 @@ body {
 .navlinks{
   font-size:40px;
   cursor:pointer;
-  top: -90px;
-  left: 88%;
-  margin: 20px;
+  float: 90%;
+  margin-left: 20px;
+  margin-top: 0px;
 }
 .search{
   font-size:30px;
@@ -144,7 +145,9 @@ body {
   list-style: none;
   display: inline;
   margin: 0px;
-  position: sticky;
+  float:right;
+  position: relative;
+  top: -20px;
 }
 .nav{
   background: linear-gradient(to left,rgba(0, 0, 0, 0),#f2f2f2);
@@ -161,22 +164,25 @@ body {
 }
 .glow {
   font-size: 20px;
+  float:left;
+  font-family: Atomic Age;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+  e60073  ff4da6
 }
 .glow span{
   letter-spacing: 10px;
   margin:10px;
-}
+}0
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px white, 0 0 40px gray;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+    text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px tomato, 0 0 80px tomato;
   }
 }
 
@@ -258,7 +264,8 @@ img {vertical-align: middle;}
 
 .icon-bar {
   position: fixed;
-  top: 30%;
+  top: 25%;
+  transition-duration: 0.4s ease-in;
 }
 
 .icon-bar a {
@@ -268,6 +275,8 @@ img {vertical-align: middle;}
   color: white;
   font-size: 20px;
   margin: 10px;
+  transition: 0.9s;
+
 }
 
 .icon-bar a:hover {
@@ -321,10 +330,13 @@ img {vertical-align: middle;}
   position: relative;
   top: 40%;
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  transition-duration: 0.9s;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
